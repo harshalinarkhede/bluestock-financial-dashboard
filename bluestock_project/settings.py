@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&nf#adx_dud*xz)9%kn3&&+_%5(fa87ao9yvga9ri7j4f9qdd3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+   "bluestock-financial-dashboard.onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Application definition
