@@ -1,16 +1,9 @@
 from django.http import HttpResponse
-from companies.models import Companies, Profitandloss, Balancesheet, Cashflow
-
 
 def home(request):
+    return HttpResponse("Bluestock Render Working")
 
-    total_companies = Companies.objects.count()
-    total_profit = Profitandloss.objects.count()
-    total_balance = Balancesheet.objects.count()
-    total_cashflow = Cashflow.objects.count()
-
-    return HttpResponse(f"""
-    <html>
+       <html>
     <head>
         <title>Bluestock Financial Dashboard</title>
 
